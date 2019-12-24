@@ -1,11 +1,19 @@
 import React from 'react'
 
+import './MessageInput.css';
 const MessageInput = () => {
   
     return (
-      <div className="outerContainer">
-          MessageInput
-      </div>
+        <form className="form">
+        <input
+          className="input"
+          type="text"
+          placeholder="Type a message..."
+        
+         
+        />
+        <button className="sendButton" >Send</button>
+      </form>
     );
   }
   
