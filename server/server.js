@@ -40,6 +40,7 @@ const typesDef = {
 wss.on('connection', function(connection) {
   var userID = getUniqueID();
   clients.push(connection)
+  
   connection.on('message', function(message) {
    
     const dataFromClient = JSON.parse(message);
